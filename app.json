@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Streakdiät",
+    "slug": "streakdiaet-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Streakdiät nutzt die Kamera, um Fotos deiner Mahlzeiten aufzunehmen.",
+        "NSPhotoLibraryUsageDescription": "Streakdiät greift auf deine Fotos zu, damit du Mahlzeitenbilder auswählen kannst."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Streakdiät greift auf deine Fotos zu, damit du Mahlzeitenbilder auswählen kannst.",
+          "cameraPermission": "Streakdiät nutzt die Kamera, um Fotos deiner Mahlzeiten aufzunehmen."
+        }
+      ]
+    ]
+  }
+}
